@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <main>
+    <h1>CatPhotoApp</h1> <!--h : heading의 약자로 제목을 나타내는 요소다. 1~6까지 있고 숫자가 커질수록 
+        글자 크기가 작아지고 중요도가 낮아진다.-->
+    <section>
+    <h2>Cat Photos</h2>
+    <!--TODO:Add link to cat photos-->
+    <p>See more <a href = "https:freecatphotoapp.com" target = "_blank">cat photos</a> in our gallery.</p> <!--웹 사이트의 단락(문장들의 모임)을 만든다.-->
+    <!-- <a href = 'https://freecatphotoapp.com'>link to cat picture</a> 링크로 이동하는 텍스트를 만든다. -->
+    <a href = "https:freecatphotoapp.com" target = "_blank"><img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt = "A cute orange cat lying on its back"> </a><!--img 태그는 닫는 태그가 없다. 이를 자체 닫는 태그라고 한다.-->
+    </section>
+    <section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <figure>
+        <img src ="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt = "A slice of lasagna on a plate.">
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+    </figure>
+    <h3>Top 3 things cats hate.</h3>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+    <figure>
+        <img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt = "Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+    </figure>
+    </section>
+    <section>
+        <h2>Cat Form</h2> 
+        <!--사용자로부터 정보를 수집하는 요소 : form-->
+        <form action = "https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                 <label><input id = "indoor" type="radio" name = "indoor-outdoor"
+                value = "indoor" checked> Indoor</label> <!--label : Indoor라는 텍스트만 입력해도 라디오 버튼이 눌러지도록 한다.-->
+                <!--value : 초기값.-->
+                <label><input id = "outdoor" type="radio" name = "indoor-outdoor" value = "outdoor"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input id = "loving" type = "checkbox" name = "personality" value="loving" checked><label for = "loving">Loving</label>
+                <input id = "lazy" type ="checkbox" name = "personality" value ="lazy"><label for = "lazy">Lazy</lable>
+                <input id = "energetic" type = "checkbox" name = "personality" value = "energetic"><label for = "energetic">Energetic</label>
+            </fieldset>
+            <input type = "text" name = "catphotourl" placeholder = "cat photo URL" required>
+            <button type = "submit">submit</button>
+        </form> <!--action 속성: 데이터를 이곳으로 보낸다.-->
+    </section>
+
+    <section>
+        <!--footer = 바닥글-->
+        <footer>
+            <!-- p 를 이용해 문장을 추가-->
+            <p>No copyright - <a href = "https:/freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </section>
+</main>
+</body>
+</html>
